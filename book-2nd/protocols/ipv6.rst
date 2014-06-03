@@ -136,7 +136,7 @@ When considering the allocation of IPv6 addresses, two types of address allocati
  - ``/64`` for a single user (e.g. a home user connected via ADSL) 
  - ``/128`` in the rare case when it is known that no more than one endhost will be attached
 
-There is one difficulty with the utilisation of these IPv6 prefixes. Consider Belnet, the Belgian research  ISP that has been allocated the ``2001:6a8::/32`` prefix. Universities are connected to Belnet. UCL uses prefix ``2001:6a8:3080::/48`` while the University of Liege uses ``2001:6a8:2d80::/32``. A commercial ISP uses prefix ``2a02:2788::/32``. Both Belnet and the commercial ISP are connected to the global Internet. 
+There is one difficulty with the utilisation of these IPv6 prefixes. Consider Belnet, the Belgian research  ISP that has been allocated the ``2001:6a8::/32`` prefix. Universities are connected to Belnet. UCL uses prefix ``2001:6a8:3080::/48`` while the University of Liege uses ``2001:6a8:2d80::/48``. A commercial ISP uses prefix ``2a02:2788::/32``. Both Belnet and the commercial ISP are connected to the global Internet. 
 
 .. graphviz:: 
 
