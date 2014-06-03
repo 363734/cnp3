@@ -183,7 +183,7 @@ With the longest match rule, the route `::/0` plays a particular role. As this r
  - a packet with destination ``2a02:2788:2c4:16f::1`` received by router `R` is destined to a host on interface ``eth0`` .
  - a packet with destination ``2001:6a8:3080::1234`` matches three routes : ``::/0``, ``2001::6a8::/32`` and ``2001::6a8:3080``. The packet is forwarded via gateway ``fe80::bad:cafe``
  - a packet with destination ``2001:1890:123a::1:1e`` matches one route : ``::/0``. The packet is forwarded via ``fe80::dead:beef``
- - a packet with destination `2001:6a8:3880:40::2`` matches two routes : ``2001:6a8::/32`` and `::/0`. The packet is forwarded via ``fe80::aaaa:bbbb``
+ - a packet with destination ``2001:6a8:3880:40::2`` matches two routes : ``2001:6a8::/32`` and `::/0`. The packet is forwarded via ``fe80::aaaa:bbbb``
 
 
 The longest prefix match can be implemented by using different data structures. One possibility is to use a trie. Details on how to implement efficient packet forwarding algorithms may be found in [Varghese2005]_.
